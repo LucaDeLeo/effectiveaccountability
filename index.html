@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Effective Accountability</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card: #161b22;
+      --text: #c9d1d9;
+      --accent: #58a6ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    h1 { margin: 0 0 .5rem; font-size: 2rem; }
+    section {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    .card {
+      background: var(--card);
+      padding: 1rem 1.25rem;
+      border-radius: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    ul { padding-left: 1.2rem; }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: .875rem;
+      opacity: .7;
+    }
+  </style>
+  <script src="https://lu.ma/embed.js" async></script>
+</head>
+<body>
+
+<header>
+  <h1>Effective Accountability</h1>
+  <p>Project &amp; Job Search Accountability Groups</p>
+</header>
+
+<section class="card">
+  <h2>How It Works</h2>
+  <ul>
+    <li>Open weekly meetings where you can set intentions, get support &amp; celebrate progress.</li>
+    <li>Completely free, no commitment — drop in any time.</li>
+    <li>After‑hangouts for anyone who wants to stay connected.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Weekly Meetings</h2>
+  <p><strong>Job Apps / Career Accountability</strong> – Mondays at 16:00&nbsp;UTC<br>
+     <strong>Project Accountability</strong> – Fridays at 16:00&nbsp;UTC</p>
+  <p>Join via the Google Meet link inside the calendar event.</p>
+</section>
+
+<section class="card">
+  <h2>Online Coworking Sessions</h2>
+  <p>Frequent coworking occurs in the <a href="https://app.gather.town/" target="_blank" rel="noopener">EA Gather Coworking Lounge</a>. Drop in any time!</p>
+</section>
+
+<section class="card">
+  <h2>Upcoming Events</h2>
+  <!--
+    Replace YOUR-LUMA-ID with your actual Luma calendar or collection ID.
+    Learn more: https://help.lu.ma/article/u8aq5-embed-events-into-your-site
+  -->
+  <div data-luma-action="calendar-list" data-luma-id="YOUR-LUMA-ID"></div>
+</section>
+
+<footer>
+  &copy; <span id="year"></span> Effective Accountability
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
